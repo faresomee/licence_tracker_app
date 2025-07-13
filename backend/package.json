@@ -1,0 +1,48 @@
+{
+  "name": "licenseplateai",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <a target=\"blank\">\r     <img src=\"./mini-logo.png\" width=\"120\" alt=\"PR\" />\r   </a>\r </p>\r <h3 align=\"center\">Backend License Plate AI Tracker 📷</h3>",
+  "main": "src/server.js",
+  "scripts": {
+    "start:dev": "npm run format && nodemon src/server.ts",
+    "start:devf": "nodemon --legacy-watch src/server.ts",
+    "start:prod": "node dist/server.js",
+    "build": "tsc --project .",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "d":"npm run build && npm run format"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.12",
+    "@types/node-notifier": "^8.0.5",
+    "@types/socket.io": "^3.0.1",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.0",
+    "node-notifier": "^10.0.1",
+    "socket.io": "^4.8.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/errorhandler": "^1.5.3",
+    "@types/express": "^5.0.1",
+    "@types/mysql": "^2.15.26",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

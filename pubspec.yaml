@@ -1,0 +1,67 @@
+name: licence_tracker_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0' # تم تعديل هذا السطر ليكون متوافقًا مع الإصدارات الحديثة
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # أضف هذا القسم هنا
+  flutter_localizations:
+    sdk: flutter
+
+  # UI and Core
+  cupertino_icons: ^1.0.8
+  
+  # Networking
+  dio: ^5.5.0+1
+  
+  # State Management
+  flutter_bloc: ^8.1.6
+  
+  # Secure Storage
+  flutter_secure_storage: ^9.2.2
+  
+  # Dependency Injection
+  get_it: ^7.7.0
+  injectable: ^2.4.2
+  
+  # Functional Programming & Models
+  dartz: ^0.10.1
+  freezed_annotation: ^2.4.2
+  
+  # Environment Variables
+  flutter_dotenv: ^5.1.0
+  pinput: ^5.0.1
+  iconsax: ^0.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  
+  # Code Generation Tools (مكانها الصحيح هنا)
+  build_runner: ^2.4.11
+  freezed: ^2.5.2
+  injectable_generator: ^2.6.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - .env 
+    # - assets/fonts/ # إذا أضفت خطوطًا، قم بإلغاء التعليق هنا
+
+  # fonts:
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf
+  #       - asset: assets/fonts/Cairo-Bold.ttf
+  #         weight: 700
